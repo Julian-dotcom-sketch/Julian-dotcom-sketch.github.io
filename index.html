@@ -5,41 +5,76 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 		<style>
-			body {
+			* {
+				padding: 0px;
+				margin: 0px;
+				box-sizing: border-box;
+			}
+
+			.container {
+				grid-template-rows: auto 1fr 2fr 1fr 1fr;
+				grid-template-areas:
+					"header header"
+					"tag1 tag1"
+					"tag2 tag2"
+					"tag3 tag3"
+					"footer footer";
+			}
+			header {
 				background-color: lightblue;
+				border: 5px solid white;
+				border-radius: 30px;
+				color: white;
+			}
+			tag1 {
+			background-color: white;
+			border: 5px solid lightblue;
+			border-radius: 30px;
+			color: black;
+			}
+			tag2{
+			background-color: lightblue;
+			color: white;
+			border: 5px solid white;
+			border-radius: 30px;
+			}
+			tag3 {
+				background-color: white;
+				color: black;
+				border: 5px solid lightblue;
+				border-radius: 30px;
+			}
+			footer {
+				background-color: lightblue;
+				color: white;
+				border: 5px solid white;
+				border-radius: 30px;
+			}
+			body {
 				font-family: "Jersey 15", serif;
 			}
 			h1 {
-				color: white;
 				text-align:center;
 			}
 			h2 {
-				color: white;
 				text-align:center;
 			}
 			.myDIV {
 				text-align: center;
-				border: 5px solid white;
+				border: 5px lightblue;
 				margin-left: auto;
 				margin-right: auto;
 				font-size: 25px;
 				border-radius: 50px;
-				color: white;
 				
 			}
 			.tryDiv {
 				font-size: 25px;
-				color: white;
 				text-align: center;
-			}
-			.white_text {
-				color: white;
-				font-size: 23px;
 			}
 			li {
 				font-size:23px;
 				text-align:center;
-				color: white;
 			}
 			ol {
 				margin-left: auto;
@@ -64,13 +99,11 @@
 			}
 			.big_text{
 				font-size: 32px;
-				color: white;
 			}
 			
 			.border{
 				border: 7px solid white;
 				font-size: 30px;
-				color: white;
 				margin-left:5px;
 				border-radius:30px;
 				padding: 15px;
@@ -105,93 +138,99 @@
 				border: 4px solid white;
 				border-radius: 30px;
 				background-color: white;
-				color: black;
 				font-size: 30px;
 			}
 		</style>
 	</head>
 	<body>
-		<h1><font size="+5">Meine drei Tage im ZID</font></h1>
-		<h2><font size="+4">Tag 1:</font></h2>
-		<div class="myDIV">
-				<p>Am ersten Tag im ZID durfte ich beiwohnen wie Computers wieder anbringt.</font></p>
+		<header>
+			<h1><font size="+5">Meine drei Tage im ZID</font></h1>
+			<p>(An der Uni)</p>
+		</header>
+		<tag1>
+			<h2><font size="+4">Tag 1:</font></h2>
+			<div class="myDIV">
+					<p>Am ersten Tag im ZID durfte ich beiwohnen wie Computers wieder anbringt.</font></p>
+				<p></p>
+					<p>Ich durfte aber auch erfahren das manche Menschen nicht so gut mit ihnen klarkommen(manche waren kurz vorm Fallen oder wurden auf den Boden gelegt).</font></p>
+				<p></p>
+					<p>Um mich zu beschäftigen habe ich begonnen diese HTML-Seite zu schreiben, da ich dabei gleich HTML lerne.</p>
+			</div>
+			<hr>
+			<div class="tryDiv">
+				<p>Im Büro kommt ab und zu mal ein süßer Hund namens Milo vorbei</p>
+			</div>
+			<img src="Milo.jpg" alt="Milo" class="kreis">
+			<div class="tryDiv">
+				<p>(Er ist echt süß aber leider auch taub)</p>
+			</div>
+			<hr>
+			<h3><font size="+10">Ein paar Fakten zur Uni (immernoch Tag Eins):</font></h3>
+			<ol><font size="+4">
+				<li><font size="+3">Die anzahl der Studierenden beträgt 12.000</font></li>
+				<li><font size="+3">Die Rektorin heißt Ada Peller und die Viezerektor/:innen heißen Jan Steinbrener, Doris Hattenberger und Peter Schlögel</font></li>
+				</font>
+			</ol>
+			<hr>
+			<div class="big_text">
+					<p>Zum Abscluss des Tages ging es noch zwei PC's auszuliefern an Studenten.</p>
+					<p>Ich wurde sogar auf 22 geschätzt. Dann hatte ich noch ein paar Minuten überzeit(macht mir nichts aus).</p>
+			</div>
+		</tag1>
+		<tag2>
+			<h2><font size="+4">Tag 2:</font></h2>
+			<div class="border">
+				<p>Ich habe auch noch herausgefunden das die Uni noch weitere Standorte hat:</p>
+				<ul>
+					<li>Es gibt noch Büro's in der Sterneckstraße</li>
+					<li>In der Kempfstraße</li>
+					<li>Und im Robert-Musil-Institut</li>
+				<p>Ich arbeite in dem Büro S.0.51 zurzeit</p>
+			</div>
+			<div class="mitte">
+				<a href="https://campusplan.aau.at/" target="_blank">
+					<button class="hover-button">Hier könnt ihr auch nachschauen:</button>
+				</a>
+			</div>
+			<hr>
+			<div class="border">
+				<p>Am Morgen habe ich geholfen vier PC's aufzusetzen.</p>
+				<p>Zwei davon haben lange zum Laden gebraucht also mussten wir warten.</p>
+				<p>Später habe ich noch geholfen dieneue Lieferung zu verstauen, dies hat gut funktioniert und ich habe dabei einiges gelermt.</p>
+				<p>Ich ahbe dann begonnen css zu lernen um mein Website-design auf das nächste Level zu bringen.</p>
+				<p>Den rest des Tages habe ich noch nach einer website gesucht auf der ich eine domain erstellen kann.</p>
+				<p>An diesem Tag fand ich aber leider keine.</p>
+				<p>Es waren entweder website Builder wo ich kein Code benutzen konnte.</p>
+				<p>Oder sie waren im ende um eine Domain zu erstellen kostenpflichtig.</p>
+			</div>
+		</tag2>
+		<tag3>
+			<h2><font size="+4">Tag 3:</font></h2>
 			<p></p>
-				<p>Ich durfte aber auch erfahren das manche Menschen nicht so gut mit ihnen klarkommen(manche waren kurz vorm Fallen oder wurden auf den Boden gelegt).</font></p>
+			<div class="border2">
+				<p>Ich habe erst ein mal weiter nach Angeboten gesucht wurde aber erst nicht fündig.</p>
+				<p>Dann habe ich geholfen ein Kabel zu kontrollieren welches von zeit zu zeit knisterte.</p>
+				<p>Mit stärkerem reindrücken hat dies dann auch funktioniert und das Knistern hatte aufgehört.</p>
+				<p>Dann war ich weiter am suchen habe dann aber dem Stefan geholfen einen neuen Arbeitsplatz einzurichten.</p>
+				<p>Danach habe ich mir angeschaut wie man websites auf Github hochstellt und es dann final geschafft diese Website zu veröffentlichen.</p>
+			</div>
+		</tag3>
+		<p></p>
+		<footer>
+			<div class="border">
+				<p>Ich will hier noch einmal dem netten Team vom ZID( Zentrale Informatikdienst) danken.</p>
+				<p>Sie waren sehr nett und haben mich echt gut behandelt. Sie sind eine tolle Truppe.</p>
+				<p>Diese drei Tage haben sehr viel Spaß gemacht und ich bin dankbar das sie mich genommen haben.</p>
+				<p>Ich füge noch einen Link hinzu damit ihr sie euch auch anschauen könnt.</p>
+				<p>Ich war am IT Service-Desk in der Abteilung für Anwendungsservice und Softwaremanagment.</p>
+			</div>
 			<p></p>
-				<p>Um mich zu beschäftigen habe ich begonnen diese HTML-Seite zu schreiben, da ich dabei gleich HTML lerne.</p>
-		</div>
-		<hr>
-		<div class="tryDiv">
-			<p>Im Büro kommt ab und zu mal ein süßer Hund namens Milo vorbei</p>
-		</div>
-		<img src="Milo.jpg" alt="Milo" class="kreis">
-		<div class="tryDiv">
-			<p>(Er ist echt süß aber leider auch taub)</p>
-		</div>
-		<hr>
-		<div class="white_text">
-		<h3><font size="+10">Ein paar Fakten zur Uni (immernoch Tag Eins):</font></h3>
-		</div>
-		<ol><font size="+4">
-			<li><font size="+3">Die anzahl der Studierenden beträgt 12.000</font></li>
-			<li><font size="+3">Die Rektorin heißt Ada Peller und die Viezerektor/:innen heißen Jan Steinbrener, Doris Hattenberger und Peter Schlögel</font></li>
-			</font>
-		</ol>
-		<hr>
-		<div class="big_text">
-				<p>Zum Abscluss des Tages ging es noch zwei PC's auszuliefern an Studenten.</p>
-				<p>Ich wurde sogar auf 22 geschätzt. Dann hatte ich noch ein paar Minuten überzeit(macht mir nichts aus).</p>
-		</div>
-		<hr>
-		<h2><font size="+4">Tag 2:</font></h2>
-		<div class="border">
-			<p>Ich habe auch noch herausgefunden das die Uni noch weitere Standorte hat:</p>
-			<ul>
-				<li>Es gibt noch Büro's in der Sterneckstraße</li>
-				<li>In der Kempfstraße</li>
-				<li>Und im Robert-Musil-Institut</li>
-			<p>Ich arbeite in dem Büro S.0.51 zurzeit</p>
-		</div>
-		<div class="mitte">
-			<a href="https://campusplan.aau.at/" target="_blank">
-				<button class="hover-button">Hier könnt ihr auch nachschauen:</button>
-			</a>
-		</div>
-		<hr>
-		<div class="border">
-			<p>Am Morgen habe ich geholfen vier PC's aufzusetzen.</p>
-			<p>Zwei davon haben lange zum Laden gebraucht also mussten wir warten.</p>
-			<p>Später habe ich noch geholfen dieneue Lieferung zu verstauen, dies hat gut funktioniert und ich habe dabei einiges gelermt.</p>
-			<p>Ich ahbe dann begonnen css zu lernen um mein Website-design auf das nächste Level zu bringen.</p>
-			<p>Den rest des Tages habe ich noch nach einer website gesucht auf der ich eine domain erstellen kann.</p>
-			<p>An diesem Tag fand ich aber leider keine.</p>
-			<p>Es waren entweder website Builder wo ich kein Code benutzen konnte.</p>
-			<p>Oder sie waren im ende um eine Domain zu erstellen kostenpflichtig.</p>
-		</div>
-		<hr>
-		<h2><font size="+4">Tag 3:</font></h2>
-		<p></p>
-		<div class="border2">
-			<p>Ich habe erst ein mal weiter nach Angeboten gesucht wurde aber erst nicht fündig.</p>
-			<p>Dann habe ich geholfen ein Kabel zu kontrollieren welches von zeit zu zeit knisterte.</p>
-			<p>Mit stärkerem reindrücken hat dies dann auch funktioniert und das Knistern hatte aufgehört.</p>
-			<p>Dann war ich weiter am suchen habe dann aber dem Stefan geholfen einen neuen Arbeitsplatz einzurichten.</p>
-			<p>Danach habe ich mir angeschaut wie man websites auf Github hochstellt und es dann final geschafft diese Website zu veröffentlichen.</p>
-		</div>
-		<p></p>
-		<div class="border">
-		<p>Ich will hier noch einmal dem netten Team vom ZID( Zentrale Informatikdienst) danken.</p>
-		<p>Sie waren sehr nett und haben mich echt gut behandelt. Sie sind eine tolle Truppe.</p>
-		<p>Diese drei Tage haben sehr viel Spaß gemacht und ich bin dankbar das sie mich genommen haben.</p>
-		<p>Ich füge noch einen Link hinzu damit ihr sie euch auch anschauen könnt.</p>
-		<p>Ich war am IT Service-Desk in der Abteilung für Anwendungsservice und Softwaremanagment.</p>
-		</div>
-		<p></p>
-		<div class="mitte">
-			<a href="https://www.aau.at/universitaet/organisation/administration-verwaltung/zid/team/">
-				<button class="hover-button">Hier könnt ihr das Team sehen</button>
-			</a>
-		</div>
+			<div class="mitte">
+				<a href="https://www.aau.at/universitaet/organisation/administration-verwaltung/zid/team/">
+					<button class="hover-button">Hier könnt ihr das Team sehen</button>
+				</a>
+			</div>
+		</footer>
 	</body>
 </html>
 	
