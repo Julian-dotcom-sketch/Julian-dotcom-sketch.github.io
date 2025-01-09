@@ -12,42 +12,28 @@
 			}
 
 			.container {
-				grid-template-rows: auto 1fr 2fr 1fr 1fr;
+				grid-template-rows: auto 5fr 1fr;
 				grid-template-areas:
 					"header header"
-					"tag1 tag1"
-					"tag2 tag2"
-					"tag3 tag3"
+					"center cener"
 					"footer footer";
 			}
 			header {
-				background-color: lightblue;
-				border: 5px solid white;
-				border-radius: 30px;
-				color: white;
-			}
-			tag1 {
-			background-color: white;
-			border: 5px solid lightblue;
-			border-radius: 30px;
-			color: black;
-			}
-			tag2{
-			background-color: lightblue;
-			color: white;
-			border: 5px solid white;
-			border-radius: 30px;
-			}
-			tag3 {
 				background-color: white;
-				color: black;
 				border: 5px solid lightblue;
+				border-radius: 30px;
+				color: black;
+			}
+			center {
+				background-color: lightblue;
+				color: white;
+				border: 5px solid white;
 				border-radius: 30px;
 			}
 			footer {
-				background-color: lightblue;
-				color: white;
-				border: 5px solid white;
+				background-color: whie;
+				color: black;
+				border: 5px solid lightblue;
 				border-radius: 30px;
 			}
 			body {
@@ -61,7 +47,7 @@
 			}
 			.myDIV {
 				text-align: center;
-				border: 5px lightblue;
+				border: 5px white;
 				margin-left: auto;
 				margin-right: auto;
 				font-size: 25px;
@@ -139,6 +125,7 @@
 				border-radius: 30px;
 				background-color: white;
 				font-size: 30px;
+				color: black;
 			}
 		</style>
 	</head>
@@ -147,7 +134,7 @@
 			<h1><font size="+5">Meine drei Tage im ZID</font></h1>
 			<p>(An der Uni)</p>
 		</header>
-		<tag1>
+		<center>
 			<h2><font size="+4">Tag 1:</font></h2>
 			<div class="myDIV">
 					<p>Am ersten Tag im ZID durfte ich beiwohnen wie Computers wieder anbringt.</font></p>
@@ -176,8 +163,6 @@
 					<p>Zum Abscluss des Tages ging es noch zwei PC's auszuliefern an Studenten.</p>
 					<p>Ich wurde sogar auf 22 geschätzt. Dann hatte ich noch ein paar Minuten überzeit(macht mir nichts aus).</p>
 			</div>
-		</tag1>
-		<tag2>
 			<h2><font size="+4">Tag 2:</font></h2>
 			<div class="border">
 				<p>Ich habe auch noch herausgefunden das die Uni noch weitere Standorte hat:</p>
@@ -203,8 +188,6 @@
 				<p>Es waren entweder website Builder wo ich kein Code benutzen konnte.</p>
 				<p>Oder sie waren im ende um eine Domain zu erstellen kostenpflichtig.</p>
 			</div>
-		</tag2>
-		<tag3>
 			<h2><font size="+4">Tag 3:</font></h2>
 			<p></p>
 			<div class="border2">
@@ -214,7 +197,7 @@
 				<p>Dann war ich weiter am suchen habe dann aber dem Stefan geholfen einen neuen Arbeitsplatz einzurichten.</p>
 				<p>Danach habe ich mir angeschaut wie man websites auf Github hochstellt und es dann final geschafft diese Website zu veröffentlichen.</p>
 			</div>
-		</tag3>
+		</center>
 		<p></p>
 		<footer>
 			<div class="border">
